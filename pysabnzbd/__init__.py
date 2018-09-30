@@ -11,7 +11,7 @@ class SabnzbdApi(object):
         if web_root is not None:
             web_root = '{}/'.format(web_root.strip('/'))
         else:
-            web_root = ''
+            web_root = 'sabnzbd'
 
         self.queue = {}
         self._api_url = '{}/{}{}'.format(base_url.rstrip('/'), web_root, 'api')
